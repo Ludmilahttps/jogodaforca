@@ -1,0 +1,61 @@
+.container
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.jogo 
+{
+    background-color: aqua;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.life
+{
+    background-color: blue;
+    width: 400px;
+    height: 470px;
+}
+
+.sidebar
+{
+    background-color: blueviolet;
+    width: 580px;
+    height: 470px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.sidebar button
+{
+    width: 30px;
+    width: 200px;
+    height: 60px;
+}
+
+.word
+{
+    background-color: green;
+}
+
+.letras
+{
+    background-color: yellow;
+    width: 600px;
+    height: 120px;
+}
+.chute
+{
+    background-color: orange;
+    width: 600px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

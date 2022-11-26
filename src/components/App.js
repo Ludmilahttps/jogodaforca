@@ -6,9 +6,9 @@ import Letras from "./Letras"
 export default function App() {
     return (
         <div className="container">
-            <Chute />
             <Jogo/>
             <Letras />
+            <Chute />
         </div>
     )
 }

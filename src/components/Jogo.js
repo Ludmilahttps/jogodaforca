@@ -2,14 +2,12 @@ export default function Jogo() {
     return (
         <div className="jogo">
             <div className="life">
-                <img></img>
+                <img data-test="game-image"></img>
             </div>
             <div className="sidebar">
-                <div className="init">
-                    <button></button>
-                </div>
+                <button data-test="choose-word" ></button>
                 <div className="word">
-                    
+
                 </div>
             </div>
         </div>

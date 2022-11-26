@@ -1,8 +1,8 @@
 export default function Chute() {
     return (
         <div className="chute">
-            <input></input>
-            <button></button>
+            <input data-test="guess-input"></input>
+            <button data-test="guess-button"></button>
         </div>
     )
 }

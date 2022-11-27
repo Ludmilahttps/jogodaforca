@@ -5,7 +5,7 @@ export default function Jogo() {
                 <img data-test="game-image"></img>
             </div>
             <div className="sidebar">
-                <button data-test="choose-word" ></button>
+                <button data-test="choose-word" >Choose Word</button>
                 <div className="word">
 
                 </div>

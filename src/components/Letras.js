@@ -17,7 +17,7 @@ function Letter(props) {
 
     return (
       <div  data-test="letter" className="letter" >
-        <a>{props.a}</a>
+        <p>{props.a}</p>
       </div>
     );
 }

@@ -1,3 +1,8 @@
+*
+{
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
 .container
 {
     display: flex;
@@ -44,12 +49,38 @@
     background-color: green;
 }
 
-.letras
+.letters
 {
-    background-color: yellow;
-    width: 600px;
-    height: 120px;
+    background-color: #FFFFFF;
+    width: 750px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    
 }
+    .letter 
+    {
+        background-color: #E1ECF4;
+        border: 1px solid #7AA7C7;
+        color: #39739D;
+        border-radius: 3px;
+        width: 40px;
+        height: 40px;
+        font-family: 'Roboto';
+        font-weight: 700;
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 6px;
+        margin-right: 6px;
+        margin-bottom: 5.5px;
+        margin-top: 5.5px;
+        text-transform: uppercase;
+    }
 .chute
 {
     background-color: orange;

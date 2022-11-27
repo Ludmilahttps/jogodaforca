@@ -6,26 +6,20 @@ Esse projeto eh a implementacao do famoso jogo da forca! Nele, o usuario tem um 
 
 - Layout
     
-    [ ]  Manipila o HTML usando somente React (sem usar o document nem bibliotecas como jQuery)
-    [https://www.figma.com/file/TaftyzjEd5T77Y83suNGGB/Jogo-da-Forca?node-id=0%3A1&t=jDKNJpA8ujo7bNRi-1](https://www.figma.com/file/TaftyzjEd5T77Y83suNGGB/Jogo-da-Forca?node-id=0%3A1&t=jDKNJpA8ujo7bNRi-1)
+    [x]  Manipila o HTML usando somente React (sem usar o document nem bibliotecas como jQuery)
     
     As imagens da forca estão disponíveis nesse notion, a parte de “Arquivos do Projeto”. São 7 imagens que devem ser alternadas de acordo com a quantidade de erros do usuário.
     
 - Componentização
-    - [ ]  O seu jogo deverá ter 4 componentes:
-        - [ ]  App (chamará os demais componentes)
-        - [ ]  Jogo (imagem da forca, botão de iniciar, palavra do jogo)
-        - [ ]  Letras (conjunto de botões com as letras)
-        - [ ]  Chute (input e botão de chute)
-    - 💡 Dica
-        
-        Mantenha todos os estados da aplicação no `App` e passe seus valores como `props` para os componentes que precisarem
-        
-        ![b.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/9f37e14c-387f-4b62-aba1-15d329f4872b/b.png)
+    - [x]  O seu jogo deverá ter 4 componentes:
+        - [x]  App (chamará os demais componentes)
+        - [x]  Jogo (imagem da forca, botão de iniciar, palavra do jogo)
+        - [x]  Letras (conjunto de botões com as letras)
+        - [x]  Chute (input e botão de chute)
         
 - Pré-jogo
-    - [ ]  Crie um arquivo chamado `palavras.js` e coloque ele dentro da pasta `src` (o nome e o local precisam ser esses!)
-    - [ ]  Dentro do arquivo, insira o array de palavras disponibilizado abaixo:
+    - [x]  Crie um arquivo chamado `palavras.js` e coloque ele dentro da pasta `src` (o nome e o local precisam ser esses!)
+    - [x]  Dentro do arquivo, insira o array de palavras disponibilizado abaixo:
         - Arquivo de palavras
             
             ```jsx
@@ -60,7 +54,7 @@ Esse projeto eh a implementacao do famoso jogo da forca! Nele, o usuario tem um 
             
         - Esse array possui strings que serão as palavras que o jogador deverá adivinhar. Você deverá importar esse array no componente `App` para utilizá-lo.
         - Você não deve mudar o nome do array! Mas se quiser mudar o conteúdo para adicionar palavras, fique à vontade 😄
-    - [ ]  Os botões de letras devem ser mapeados através de um array do alfabeto
+    - [x]  Os botões de letras devem ser mapeados através de um array do alfabeto
         - Array do alfabeto
             
             ```jsx
@@ -97,10 +91,7 @@ Esse projeto eh a implementacao do famoso jogo da forca! Nele, o usuario tem um 
     - [ ]  Caso o usuário perca:
         - [ ]  A imagem final que deve aparecer é a do boneco enforcado (forca6)
         - [ ]  A palavra deve ser revelada, mas em **vermelho**
-- **Para correção automática ⚠️**
-    
-    [Jogo da Forca - Seletores](https://www.figma.com/file/jMOhjKXPNlCF5nsXlEdezl/Jogo-da-Forca---Seletores?node-id=0%3A1&t=44iltPZdoQGdcl8r-0)
-    
+        
     - 💡 Para saber se realmente o seletor está inserido, você pode inspecionar o elemento na tela
         
         ![indefier.gif](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/bdcf05dd-c3ca-4a2f-94d5-4be335ea9275/indefier.gif)

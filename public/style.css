@@ -13,42 +13,52 @@
 
 .jogo 
 {
-    background-color: aqua;
     width: 100%;
-    height: 500px;
+    padding-top: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+    .jogo img
+    {
+        width: 400px;
+        height: 466.67px;
+    }
 
-.life
-{
-    background-color: blue;
-    width: 400px;
-    height: 470px;
-}
+    .life
+    {
+        width: 400px;
+        height: 470px;
+    }
+    .sidebar
+    {
+        width: 580px;
+        height: 470px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: space-between;
+        padding: 60px;
+    }
+        .sidebar button
+        {
+            background: #27AE60;
+            color: #FFFFFF;
+            border: none;
+            border-radius: 8px;
+            width: 200px;
+            height: 60px;
+            font-family: 'Roboto';
+            font-weight: 700;
+            font-size: 20px;
+        }
 
-.sidebar
-{
-    background-color: blueviolet;
-    width: 580px;
-    height: 470px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-}
-
-.sidebar button
-{
-    width: 30px;
-    width: 200px;
-    height: 60px;
-}
-
-.word
-{
-    background-color: green;
-}
+        .word
+        {
+            background-color: green;
+            width: 450px;
+            height: 100px;
+        }
 
 .letters
 {

@@ -2,6 +2,8 @@
 
 Esse projeto eh a implementacao do famoso jogo da forca! Nele, o usuario tem um total de 6 vidas, caso ele acerte a palavra antes de perder todas as vidas ele ganha, caso contrario ele perde!
 
+jogodaforca-ak5ncl75t-ludmilahttps.vercel.app
+
 # Requisitos
 
 - Layout

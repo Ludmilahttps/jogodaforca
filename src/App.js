@@ -16,7 +16,6 @@ export default function App() {
     const [letraclicada, setLetraClicada] = React.useState([])
     const [habilitado, setHabilitado] = React.useState(false)
     const [letrascertas, setLetrasCertas] = React.useState([])
-    const [habilitariniciarjogo, setHabilitarIniciarJogo] = React.useState(false)
     const [chute, setChute] = React.useState(false)
     const [status, setStatus] = React.useState('black')
 
@@ -33,8 +32,6 @@ export default function App() {
                 setHabilitado={setHabilitado} 
                 letrascertas={letrascertas} 
                 setLetrasCertas={setLetrasCertas} 
-                habilitariniciarjogo={habilitariniciarjogo} 
-                setHabilitarIniciarJogo={setHabilitarIniciarJogo}
                 chute={chute}
                 setChute={setChute}
                 status={status}
@@ -51,8 +48,6 @@ export default function App() {
                 setHabilitado={setHabilitado} 
                 letrascertas={letrascertas} 
                 setLetrasCertas={setLetrasCertas} 
-                habilitariniciarjogo={habilitariniciarjogo} 
-                setHabilitarIniciarJogo={setHabilitarIniciarJogo}
                 chute={chute}
                 setChute={setChute}
                 status={status}

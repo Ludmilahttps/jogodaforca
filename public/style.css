@@ -56,9 +56,13 @@
         .word
         { 
             height: 100px;
+            font-family: 'Roboto';
+            font-weight: 400;
+            font-size: 44px;
             display: flex;
             align-items: flex-end;
             justify-content: flex-end;
+            text-transform: uppercase;
         }
 
 .letters
@@ -134,3 +138,13 @@
         justify-content: center;
         cursor: pointer;
     }
+
+.green
+{
+    color: #27AE60;
+}
+
+.red 
+{
+    color: red;
+}

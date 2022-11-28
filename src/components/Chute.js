@@ -16,15 +16,14 @@ function guess(props)
     if (props.chute === props.palavra.join('')) {
         //alert("You Win")
         props.setWin(true)
-        props.setHabilitado(true)
         props.setStatus('green')
-        props.setRun(false)
     }
     else {
         //alert("You Lose")
         props.setErros(6)
-        props.setHabilitado(true)
         props.setStatus('red')
-        props.setRun(false)
     }
+    props.setHabilitado(true)
+    props.setRun(false)
+    props.setGuess(false)
 }

@@ -57,12 +57,20 @@
         { 
             height: 100px;
             font-family: 'Roboto';
-            font-weight: 400;
-            font-size: 44px;
             display: flex;
             align-items: flex-end;
             justify-content: flex-end;
             text-transform: uppercase;
+        }
+        .word h1
+        {
+            font-weight: 400;
+            font-size: 44px;
+        }
+        .word h2
+        {
+            font-weight: 400;
+            font-size: 32px;
         }
 
 .letters

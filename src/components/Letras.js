@@ -15,22 +15,29 @@ export default function Letras(props) {
 }
 
 function Letter(prop) {
-  let aux=0;
+  let aux = 0;
   return (
     <div data-test="letter" className="letter" onClick={() => {
       prop.props.setLetraClicada([...prop.props.letraclicada, prop.a])
-      if(prop.props.palavra.includes(prop.a)){ 
-        const novoletrascertas=[...prop.props.letrascertas,prop.a]
+      if (prop.props.palavra.includes(prop.a)) {
+        const novoletrascertas = [...prop.props.letrascertas, prop.a]
         prop.props.setLetrasCertas(novoletrascertas)
         for (let i = 0; i < prop.props.palavra.length; i++) {
-          if (novoletrascertas.includes(prop.props.palavra[i])) 
-          {
+          if (novoletrascertas.includes(prop.props.palavra[i])) {
             aux = aux + 1
           }
         }
       }
-      if (aux===prop.props.palavra.length){
+      if (aux === prop.props.palavra.length) {
         prop.props.setStatus('green')
+      }
+      if (!prop.props.palavra.includes(prop.a)) {
+        const novoerros = prop.props.erros + 1
+        prop.props.setErros(novoerros)
+
+        if (novoerros === 6) {
+          prop.props.setStatus('red')
+        }
       }
 
     }}>

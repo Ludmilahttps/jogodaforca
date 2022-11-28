@@ -37,6 +37,7 @@ function Letter(prop) {
           prop.props.setStatus('green')
           prop.props.setHabilitado(true)
           prop.props.setRun(false)
+          prop.props.setGuess(true)
         }
         if (!prop.props.palavra.includes(prop.a)) {
           const novoerros = prop.props.erros + 1
@@ -45,6 +46,7 @@ function Letter(prop) {
             prop.props.setStatus('red')
             prop.props.setHabilitado(true)
             prop.props.setRun(false)
+            prop.props.setGuess(true)
           }
         }
         let elemento = document.getElementById(`${prop.a}`)

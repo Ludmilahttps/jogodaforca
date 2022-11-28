@@ -25,5 +25,5 @@ function guess(props)
     }
     props.setHabilitado(true)
     props.setRun(false)
-    props.setGuess(false)
+    props.setGuess(true)
 }

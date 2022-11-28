@@ -9,7 +9,7 @@ export default function App() {
     const [palavra, setPalavra] = React.useState([])
     const [erros, setErros] = React.useState(0)
     const [letraclicada, setLetraClicada] = React.useState([])
-    const [habilitado, setHabilitado] = React.useState(false)
+    const [habilitado, setHabilitado] = React.useState(true)
     const [letrascertas, setLetrasCertas] = React.useState([])
     const [chute, setChute] = React.useState(false)
     const [status, setStatus] = React.useState('black')

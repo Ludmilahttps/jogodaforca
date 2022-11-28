@@ -149,7 +149,12 @@
     color: red;
 }
 
-disabled
+.black
+{
+    color: #000000;
+}
+
+.none
 {
     display: none;
 }

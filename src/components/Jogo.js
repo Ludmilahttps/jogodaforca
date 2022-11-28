@@ -1,13 +1,16 @@
-import Letras from "./Letras"
+import palavras from "./palavras"
 import React from 'react'
 
 export default function Jogo(props) {
 
     function initGame() {
-        props.setHabilitado(true)
+        props.setRun(true)
+        props.setHabilitado(false)
         props.setLetraClicada('.')
-        props.setTracos('flex')
-        window.location.reload(true)
+        props.setOff('')
+        props.setPalavra(shuffle())
+        props.setStatus('black')
+        props.setErros(0)
     }
 
     return (
@@ -16,8 +19,8 @@ export default function Jogo(props) {
                 <img data-test="game-image" src={`assets/forca${props.erros}.png`}></img>
             </div>
             <div className="sidebar">
-                <button data-test="choose-word" onClick={initGame}>Choose Word</button>
-                <div data-test='word' data-answer={props.palavra.join('')} className="word traços">
+                <button data-test="choose-word" id="choose-word" disabled={props.run} onClick={initGame}>Choose Word</button>
+                <div data-test='word' data-answer={props.palavra.join('')} className={`word traços ${props.off}`}>
                     {props.palavra.map(p =>
                         <div className="letraforca" >
                             <h1 style={props.letraclicada.includes(p) || props.erros === 6 || props.chute ? { display: 'block' } : { display: 'none' }} className={props.status}>{p}</h1>
@@ -28,4 +31,10 @@ export default function Jogo(props) {
             </div>
         </div>
     )
+}
+
+function shuffle()
+{
+    const randomElement = palavras[Math.floor(Math.random() * palavras.length)]
+    return (randomElement.split(''))
 }

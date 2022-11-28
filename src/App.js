@@ -5,27 +5,23 @@ import palavras from "./components/palavras"
 
 import React from 'react'
 
-let palavra;
-const randomElement = palavras[Math.floor(Math.random() * palavras.length)];
-palavra = randomElement.split('')
-
 export default function App() {
-
+    const [palavra, setPalavra] = React.useState([])
     const [erros, setErros] = React.useState(0)
-    const [Tracos, setTracos] = React.useState('none')
     const [letraclicada, setLetraClicada] = React.useState([])
     const [habilitado, setHabilitado] = React.useState(false)
     const [letrascertas, setLetrasCertas] = React.useState([])
     const [chute, setChute] = React.useState(false)
     const [status, setStatus] = React.useState('black')
+    const [run, setRun] = React.useState(false)
+    const [off, setOff] = React.useState('none')
 
     return (
         <div className="container">
             <Jogo 
                 palavra={palavra} 
+                setPalavra={setPalavra}
                 erros={erros} setErros={setErros} 
-                Tracos={Tracos} 
-                setTracos={setTracos} 
                 letraclicada={letraclicada} 
                 setLetraClicada={setLetraClicada} 
                 habilitado={habilitado} 
@@ -36,12 +32,14 @@ export default function App() {
                 setChute={setChute}
                 status={status}
                 setStatus={setStatus}
+                run={run}
+                setRun={setRun}
+                off={off}
+                setOff={setOff}
                 />
             <Letras 
                 palavra={palavra} 
                 erros={erros} setErros={setErros} 
-                Tracos={Tracos} 
-                setTracos={setTracos} 
                 letraclicada={letraclicada} 
                 setLetraClicada={setLetraClicada} 
                 habilitado={habilitado} 
@@ -52,6 +50,10 @@ export default function App() {
                 setChute={setChute}
                 status={status}
                 setStatus={setStatus}
+                run={run}
+                setRun={setRun}
+                off={off}
+                setOff={setOff}
             />
             <Chute />
         </div>

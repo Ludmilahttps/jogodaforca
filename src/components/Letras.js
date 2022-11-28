@@ -34,6 +34,7 @@ function Letter(prop) {
       if (aux === prop.props.palavra.length) {
         prop.props.setStatus('green')
         prop.props.setHabilitado(true)
+        prop.props.setRun(false)
       }
       if (!prop.props.palavra.includes(prop.a)) {
         const novoerros = prop.props.erros + 1
@@ -41,6 +42,7 @@ function Letter(prop) {
         if (novoerros === 6) {
           prop.props.setStatus('red')
           prop.props.setHabilitado(true)
+          prop.props.setRun(false)
         }
       }
       let elemento = document.getElementById(`${prop.a}`)

@@ -56,21 +56,26 @@
         .word
         { 
             height: 100px;
-            font-family: 'Roboto';
             display: flex;
             align-items: flex-end;
             justify-content: flex-end;
             text-transform: uppercase;
+            justify-content: center;
+            letter-spacing: 12px;
         }
         .word h1
         {
+            font-family: 'Roboto';
             font-weight: 400;
             font-size: 44px;
+            text-align: center;
         }
         .word h2
         {
-            font-weight: 400;
-            font-size: 32px;
+            font-family: 'Noto Sans';
+            font-weight: 700;
+            font-size: 60px;
+            line-height: 68px;
         }
 
 .letters

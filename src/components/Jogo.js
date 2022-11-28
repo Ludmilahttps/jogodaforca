@@ -27,7 +27,7 @@ export default function Jogo(props) {
                     {props.palavra.map(p =>
                         <div className="letraforca" >
                             <h1 style={props.letraclicada.includes(p) || props.erros === 6 || props.win ? { display: 'block' } : { display: 'none' }} className={props.status}>{p}</h1>
-                            <h2 style={props.letraclicada.includes(p) || props.erros === 6 || props.win ? { display: 'none' } : { display: 'block' }}>{' __ '}</h2>
+                            <h2 style={props.letraclicada.includes(p) || props.erros === 6 || props.win ? { display: 'none' } : { display: 'block' }}>{'_'}</h2>
                         </div>)
                     }
                 </div>

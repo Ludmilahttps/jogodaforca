@@ -45,6 +45,7 @@ export default function App() {
             />
             <Letras
                 palavra={palavra}
+                setPalavra={setPalavra}
                 erros={erros} setErros={setErros}
                 letraclicada={letraclicada}
                 setLetraClicada={setLetraClicada}
@@ -60,9 +61,14 @@ export default function App() {
                 setRun={setRun}
                 off={off}
                 setOff={setOff}
+                guess={guess}
+                setGuess={setGuess}
+                win={win}
+                setWin={setWin}
             />
             <Chute
                 palavra={palavra}
+                setPalavra={setPalavra}
                 erros={erros} setErros={setErros}
                 letraclicada={letraclicada}
                 setLetraClicada={setLetraClicada}

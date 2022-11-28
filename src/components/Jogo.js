@@ -4,7 +4,7 @@ import React from 'react'
 export default function Jogo(props) {
 
     function initGame() {
-        props.setRun(true)
+        props.setRun(true) //permite que o jogo seja reiniciado a qualquer momento
         props.setHabilitado(false)
         props.setLetraClicada('.')
         props.setOff('')

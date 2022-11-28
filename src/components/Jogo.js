@@ -17,8 +17,13 @@ export default function Jogo(props) {
             </div>
             <div className="sidebar">
                 <button data-test="choose-word" onClick={initGame}>Choose Word</button>
-                <div data-test='word' data-answer={props.palavra.join('')} className="traços">
-                    {props.palavra}
+                <div data-test='word' data-answer={props.palavra.join('')} className="word traços">
+                    {props.palavra.map(p =>
+                        <div className="letraforca" >
+                            <h1 style={props.letraclicada.includes(p) || props.erros === 6 || props.chute ? { display: 'block' } : { display: 'none' }} className={props.status}>{p}</h1>
+                            <h2 style={props.letraclicada.includes(p) || props.erros === 6 || props.chute ? { display: 'none' } : { display: 'block' }}>{' ____ '}</h2>
+                        </div>)
+                    }
                 </div>
             </div>
         </div>

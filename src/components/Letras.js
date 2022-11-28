@@ -1,29 +1,28 @@
-export default function Letras() {
+import { toHaveStyle } from "@testing-library/jest-dom/dist/matchers";
+
+export default function Letras(props) {
   const alfabeto = ["a", "b", "c", "d", "e", "f", "g",
     "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r",
     "s", "t", "u", "v", "w", "x", "y", "z"];
 
-  const Letters = alfabeto.map((letter) => { return <Letter a={letter} /> })
+  const Letters = alfabeto.map((letter) => { return <Letter props={props} a={letter} /> })
 
   return (
     <div className="letters">
-      { Letters }
-        </div >
-    )
+      {Letters}
+    </div >
+  )
 }
 
-
-function Letter(props) {
-
+function Letter(prop) {
   return (
-    <div data-test="letter" className="letter"  onClick={Try}>
-      <p>{props.a}</p>
+    <div data-test="letter" className="letter" onClick={() => {prop.props.setLetraClicada([...prop.props.letraclicada,prop.a])}}>
+      <p>{prop.a}</p>
     </div>
   );
 }
 
-function Try(prop)
+function Try()
 {
-  console.log(prop)
-  return 0
+  let aux;
 }

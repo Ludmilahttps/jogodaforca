@@ -17,6 +17,8 @@ export default function App() {
     const [habilitado, setHabilitado] = React.useState(false)
     const [letrascertas, setLetrasCertas] = React.useState([])
     const [habilitariniciarjogo, setHabilitarIniciarJogo] = React.useState(false)
+    const [chute, setChute] = React.useState(false)
+    const [status, setStatus] = React.useState('black')
 
     return (
         <div className="container">
@@ -32,8 +34,30 @@ export default function App() {
                 letrascertas={letrascertas} 
                 setLetrasCertas={setLetrasCertas} 
                 habilitariniciarjogo={habilitariniciarjogo} 
-                setHabilitarIniciarJogo={setHabilitarIniciarJogo}/>
-            <Letras />
+                setHabilitarIniciarJogo={setHabilitarIniciarJogo}
+                chute={chute}
+                setChute={setChute}
+                status={status}
+                setStatus={setStatus}
+                />
+            <Letras 
+                palavra={palavra} 
+                erros={erros} setErros={setErros} 
+                Tracos={Tracos} 
+                setTracos={setTracos} 
+                letraclicada={letraclicada} 
+                setLetraClicada={setLetraClicada} 
+                habilitado={habilitado} 
+                setHabilitado={setHabilitado} 
+                letrascertas={letrascertas} 
+                setLetrasCertas={setLetrasCertas} 
+                habilitariniciarjogo={habilitariniciarjogo} 
+                setHabilitarIniciarJogo={setHabilitarIniciarJogo}
+                chute={chute}
+                setChute={setChute}
+                status={status}
+                setStatus={setStatus}
+            />
             <Chute />
         </div>
     )

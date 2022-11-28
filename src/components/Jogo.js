@@ -26,8 +26,8 @@ export default function Jogo(props) {
                 <div data-test='word' data-answer={props.palavra.join('')} className={`word traços ${props.off}`}>
                     {props.palavra.map(p =>
                         <div className="letraforca" >
-                            <h1 style={props.letraclicada.includes(p) || props.erros === 6 || props.guess ? { display: 'block' } : { display: 'none' }} className={props.status}>{p}</h1>
-                            <h2 style={props.letraclicada.includes(p) || props.erros === 6 || props.guess ? { display: 'none' } : { display: 'block' }}>{' __ '}</h2>
+                            <h1 style={props.letraclicada.includes(p) || props.erros === 6 || props.win ? { display: 'block' } : { display: 'none' }} className={props.status}>{p}</h1>
+                            <h2 style={props.letraclicada.includes(p) || props.erros === 6 || props.win ? { display: 'none' } : { display: 'block' }}>{' __ '}</h2>
                         </div>)
                     }
                 </div>

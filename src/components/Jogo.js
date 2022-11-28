@@ -23,7 +23,7 @@ export default function Jogo(props) {
             </div>
             <div className="sidebar">
                 <button data-test="choose-word" id="choose-word" disabled={props.run} onClick={initGame}>Choose Word</button>
-                <div data-test='word' data-answer={props.palavra.join('')} className={`word traços ${props.off}`}>
+                <div data-test="word" data-answer={props.palavra.join('')} className={`word traços ${props.off}`}>
                     {props.palavra.map(p =>
                         <div className="letraforca" >
                             <h1 style={props.letraclicada.includes(p) || props.erros === 6 || props.win ? { display: 'block' } : { display: 'none' }} className={props.status}>{p}</h1>

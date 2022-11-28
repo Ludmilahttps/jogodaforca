@@ -49,7 +49,7 @@ function Letter(prop) {
         }
         let elemento = document.getElementById(`${prop.a}`)
         elemento.setAttribute("disabled", "true")
-        console.log(elemento)
+        //console.log(elemento)
       }
     }}>
       <p>{prop.a}</p>

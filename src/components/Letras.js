@@ -1,23 +1,29 @@
 export default function Letras() {
-    const alfabeto = ["a", "b", "c", "d", "e", "f", "g",
-    "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", 
+  const alfabeto = ["a", "b", "c", "d", "e", "f", "g",
+    "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r",
     "s", "t", "u", "v", "w", "x", "y", "z"];
 
-    const Letters = alfabeto.map((letter) => { return <Letter  a={letter}/> })
+  const Letters = alfabeto.map((letter) => { return <Letter a={letter} /> })
 
-    return (
-        <div className="letters">
-            {Letters}
-        </div>
+  return (
+    <div className="letters">
+      { Letters }
+        </div >
     )
 }
 
 
 function Letter(props) {
 
-    return (
-      <div  data-test="letter" className="letter" >
-        <p>{props.a}</p>
-      </div>
-    );
+  return (
+    <div data-test="letter" className="letter"  onClick={Try}>
+      <p>{props.a}</p>
+    </div>
+  );
+}
+
+function Try(prop)
+{
+  console.log(prop)
+  return 0
 }

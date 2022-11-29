@@ -63,36 +63,36 @@ jogodaforca-ak5ncl75t-ludmilahttps.vercel.app
             const alfabeto = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
             ```
             
-    - [ ]  Antes de o jogo iniciar, o input e os botões de letras devem estar desabilitados
+    - [x]  Antes de o jogo iniciar, o input e os botões de letras devem estar desabilitados
 - Ao apertar “escolher palavra”
-    - [ ]  Input e letras passam a ficar habilitadas
-    - [ ]  A contagem de erros nesse momento é 0, a imagem da forca vazia é mostrada
-    - [ ]  Você deve sortear uma das palavras do array que está no arquivo `palavras.js` para o usuário tentar adivinhar
-    - [ ]  Aparece a palavra a ser adivinhada na tela, com um underline ( `_` ) para cada letra que a palavra possui
+    - [x]  Input e letras passam a ficar habilitadas
+    - [x]  A contagem de erros nesse momento é 0, a imagem da forca vazia é mostrada
+    - [x]  Você deve sortear uma das palavras do array que está no arquivo `palavras.js` para o usuário tentar adivinhar
+    - [x]  Aparece a palavra a ser adivinhada na tela, com um underline ( `_` ) para cada letra que a palavra possui
     - 💡Dica
         
         Se você transformar a palavra em um array, será muito mais fácil de fazer as operações e comparações que irão acontecer no jogo 😉
         
 - Ao pressionar uma letra
-    - [ ]  O botão de uma letra já clicada deve ficar desabilitado
-    - [ ]  Se a palavra escolhida no jogo tiver a letra que o usuário apertou:
-        - [ ]  O underline da posição correspondente à letra deve ser substituído pela letra em si
-        - [ ]  As palavras disponibilizadas não possuem caracteres especiais, então não precisa se preocupar com isso!
-    - [ ]  Se a palavra escolhida no jogo NÃO tiver a letra que o usuário apertou:
-        - [ ]  Sua contagem de erros deve aumentar
-            - [ ]  A imagem na forca deve mudar (forca0 > forca1 > forca2… e assim sucessivamente)
+    - [x]  O botão de uma letra já clicada deve ficar desabilitado
+    - [x]  Se a palavra escolhida no jogo tiver a letra que o usuário apertou:
+        - [x]  O underline da posição correspondente à letra deve ser substituído pela letra em si
+        - [x]  As palavras disponibilizadas não possuem caracteres especiais, então não precisa se preocupar com isso!
+    - [x]  Se a palavra escolhida no jogo NÃO tiver a letra que o usuário apertou:
+        - [x]  Sua contagem de erros deve aumentar
+            - [x]  A imagem na forca deve mudar (forca0 > forca1 > forca2… e assim sucessivamente)
 - Input de chute
-    - [ ]  Caso o usuário deseje, ele pode chutar a palavra inteira no input
-    - [ ]  Ao fazer isso, se acertar a palavra, ele ganha imediatamente
-    - [ ]  Mas, se errar, ele perde imediatamente, independente da contagem anterior de erros. A imagem que deve aparecer nesse momento é a do bonequinho enforcado (forca6)
+    - [x]  Caso o usuário deseje, ele pode chutar a palavra inteira no input
+    - [x]  Ao fazer isso, se acertar a palavra, ele ganha imediatamente
+    - [x]  Mas, se errar, ele perde imediatamente, independente da contagem anterior de erros. A imagem que deve aparecer nesse momento é a do bonequinho enforcado (forca6)
 - Fim de jogo
-    - [ ]  Botões de letras e input de chute devem ser desabilitados
-    - [ ]  Caso o usuário ganhe:
-        - [ ]  Quando o usuário ganha, a palavra completa fica em **verde** e os botões e input voltam a ficar desabilitados
-        - [ ]  Para continuar a jogar, o usuário deve apertar o botão “Escolher Palavra”, e o jogo será reiniciado do zero
-    - [ ]  Caso o usuário perca:
-        - [ ]  A imagem final que deve aparecer é a do boneco enforcado (forca6)
-        - [ ]  A palavra deve ser revelada, mas em **vermelho**
+    - [x]  Botões de letras e input de chute devem ser desabilitados
+    - [x]  Caso o usuário ganhe:
+        - [x]  Quando o usuário ganha, a palavra completa fica em **verde** e os botões e input voltam a ficar desabilitados
+        - [x]  Para continuar a jogar, o usuário deve apertar o botão “Escolher Palavra”, e o jogo será reiniciado do zero
+    - [x]  Caso o usuário perca:
+        - [x]  A imagem final que deve aparecer é a do boneco enforcado (forca6)
+        - [x]  A palavra deve ser revelada, mas em **vermelho**
         
     - 💡 Para saber se realmente o seletor está inserido, você pode inspecionar o elemento na tela
         
